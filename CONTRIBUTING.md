@@ -11,7 +11,7 @@ Thanks for helping keep this list the most current directory of AI sandboxes!
    - Browser sandboxes → cloud browser automation for agents
    - Adjacent → dev environments genuinely positioned for agents
 3. **One entry = one line** (managed/browser/adjacent) or one table row (OSS). Format:
-   `- [Name](https://official-site) ` + optional tags (`agent-first`, `OSS`, `browser`) + ` — ` + one-line description + 1–2 key facts (isolation tech, pricing, funding, SDKs).
+   `- [Name](https://example.com) ` + optional tags (`agent-first`, `OSS`, `browser`) + ` — ` + one-line description + 1–2 key facts (isolation tech, pricing, funding, SDKs). (Shown as an unlinked code example above — use the real official site.)
 4. **Add the matching record** to `data/sandboxes.json` (fields: `name`, `url`, `category` ∈ managed|oss|browser|adjacent, `description`, `isolation`, `oss` bool, `agent_first` bool, `status` ∈ active|acquired|shutdown|pivoted).
 5. **Status changes:** if a product is acquired, shuts down, pivots, or changes license, update its README entry *and* add a row (newest-first) to `docs/status-changes.md`.
 
