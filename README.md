@@ -78,7 +78,7 @@ The building blocks underneath most managed sandboxes — run your own.
 | [OpenHands runtime](https://github.com/All-Hands-AI/OpenHands) | All-Hands AI | Docker containers (default) | MIT | Reference OSS coding-agent execution runtime ([openhands.dev](https://openhands.dev)); Daytona partnership for elastic sandboxes |
 | [AgentBox](https://github.com/topics/agent-sandbox) | community | Docker+FUSE overlay (local), microVM (cloud) | MIT | Agent sandbox from the 2026 provider comparisons |
 | [h5i](https://github.com/topics/agent-sandbox) | community | Git worktrees (file/branch/port isolation) | Apache-2.0 | Rust CLI running multiple coding agents in sealed git-worktree sandboxes |
-| [bashkit4j](https://search.maven.org/search?q=bashkit4j) | community | In-process interpreter (no syscalls) | MIT | In-JVM bash sandbox for agents: 160+ commands in Rust, in-memory VFS, zero infra |
+| [bashkit4j](https://github.com/tersePrompts/bashkit4j) | tersePrompts | In-process interpreter (no syscalls) | MIT | In-JVM bash sandbox for AI agents: 160+ commands in Rust, in-memory VFS, network denied by default, zero infra |
 | [ComputeSDK](https://www.computesdk.com) | ComputeSDK | Provider-agnostic | — | One API over 30+ sandbox providers + a public TTI benchmark leaderboard — a router/benchmark layer, not a runtime |
 
 > Community rows (AgentBox, h5i) are tracked via the [agent-sandbox topic](https://github.com/topics/agent-sandbox) — star the repos that look alive before depending on them.
