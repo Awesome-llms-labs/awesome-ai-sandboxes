@@ -6,6 +6,7 @@ exclude = [
   "https://www.npmjs.com",
   "https://npmjs.com",
   "https://replit.com",  # bot-blocking (RemoteDisconnected on plain GET)
+  "https://platform.openai.com",  # 403 to automated checks; live for humans
 ]
 # Be lenient with rate-limited hosts; retry before failing.
 max_retries = 3
