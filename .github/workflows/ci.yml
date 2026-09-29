@@ -1,0 +1,46 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  links:
+    name: Link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config .lychee.toml --no-progress './**/*.md'
+          fail: true
+
+  data:
+    name: Validate data file
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate sandboxes.json
+        run: |
+          python3 - <<'EOF'
+          import json
+          data = json.load(open('data/sandboxes.json'))
+          assert isinstance(data, list) and data, "must be a non-empty list"
+          required = {"name", "url", "category", "description", "isolation", "oss", "agent_first", "status"}
+          cats = {"managed", "oss", "browser", "adjacent"}
+          statuses = {"active", "acquired", "shutdown", "pivoted"}
+          for i, e in enumerate(data):
+              missing = required - e.keys()
+              assert not missing, f"entry {i} ({e.get('name')}) missing {missing}"
+              assert e["category"] in cats, f"entry {i} bad category {e['category']}"
+              assert e["status"] in statuses, f"entry {i} bad status {e['status']}"
+              assert e["url"].startswith("https://"), f"entry {i} url must be https"
+          names = [e["name"] for e in data]
+          assert len(names) == len(set(names)), "duplicate names"
+          print(f"OK: {len(data)} entries validated")
+          EOF
