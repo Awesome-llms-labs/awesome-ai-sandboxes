@@ -1,0 +1,11 @@
+# lychee link-checker config
+# Pre-emptive excludes for sites known to block automated checks.
+exclude = [
+  "https://www.producthunt.com",
+  "https://marktechpost.com",
+  "https://www.npmjs.com",
+  "https://npmjs.com",
+]
+# Be lenient with rate-limited hosts; retry before failing.
+max_retries = 3
+timeout = 30
