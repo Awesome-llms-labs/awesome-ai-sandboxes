@@ -143,6 +143,7 @@ Machine-readable: [`data/sandboxes.json`](data/sandboxes.json) — every entry, 
 - [data-advantage/vibereference — code execution sandbox providers](https://github.com/data-advantage/vibereference/blob/HEAD/content/ai-development/code-execution-sandbox-providers.md) (updated Sep 2026)
 - [feder-cr/aihawk — browserbase alternatives](https://github.com/feder-cr/aihawk/blob/HEAD/docs/browserbase-alternatives.md) & [cloud browser infrastructure for AI agents](https://github.com/feder-cr/aihawk/blob/HEAD/docs/cloud-browser-infrastructure-for-ai-agents.md)
 - [Upstash — AI agent sandbox providers compared (2026)](https://upstash.com/blog/ai-agent-sandbox-providers-compared-2026) — vendor-authored 15-provider comparison; treat cost claims as vendor-framed
+- [Boxyard](https://boxyard.dev) — directory of cloud sandbox providers for AI agents: published prices, limits, a cost calculator, and side-by-side comparisons
 
 ## Contributing
 
