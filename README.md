@@ -103,6 +103,7 @@ The building blocks underneath most managed sandboxes — run your own.
 
 Not sandboxes per se, but cloud dev environments genuinely positioned for (or widely used by) coding agents.
 
+- [AppWizzy](https://appwizzy.com/) `agent-first` — Cloud dev environments for AI-assisted web apps; dedicated VMs and a hosted [Codex desktop](https://appwizzy.com/documentation/appwizzy-codex-desktop) (per vendor).
 - [GitHub Codespaces](https://github.com/features/codespaces) — Devcontainers-as-VMs used by coding agents (Cursor et al.); free 120 core-hrs/mo.
 - [Coder](https://coder.com) `OSS` — Governed workspaces for human + AI-agent hybrid teams: Agent Boundaries, AI Bridge, Coder Tasks; air-gapped/DoD ready; Terraform-provisioned on customer infra. OSS ([coder/coder](https://github.com/coder/coder)). $90M Series C (KKR, Apr 2026); 300% YoY bookings.
 - [Ona](https://ona.com) (ex-Gitpod) — Pivoted Sep 2025 to an AI agent platform: sandboxed ephemeral remote envs, command deny list, audit logs. 🔀 **Acquired by OpenAI, Jun 2026** (team joined the Codex group). Gitpod Classic PAYG sunset Oct 2025.
