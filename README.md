@@ -56,6 +56,7 @@ Cloud services that give your agent an isolated computer on demand.
 - [Docker Sandboxes](https://www.docker.com) `agent-first` — MicroVM-based execution environments for AI agents with Docker AI Governance (MCP governance + org policy enforcement). Announced Aug 2026.
 - [Superserve](https://www.superserve.ai) `agent-first` `OSS` — Persistent, secure Firecracker sandboxes: <200ms startup, unlimited sessions, credentials broker, versioned filesystem with snapshot/rollback. Apache-2.0, TS + Python SDKs.
 - [OpenAI Code Interpreter / Sandbox Agents](https://platform.openai.com) — Built-in Python code execution for assistants/agents. "Sandbox Agents" (Apr 2026) lets the runtime target third-party sandboxes: Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel — a good proxy for the category's center of gravity.
+- [WBX Sandbox](https://sandbox.wbx.cz) `agent-first` — Firecracker microVM sandboxes for AI agents, hosted in the EU. Remote MCP server (connects directly to Claude/ChatGPT-style clients), REST API, Python SDK and LangChain integration ([langchain-wbxsandbox](https://pypi.org/project/langchain-wbxsandbox/)). Idle sandboxes go to sleep and keep their files, the next command wakes them in seconds; named sandboxes can be reused across sessions. Optional dual-stack networking with a public IPv6 per sandbox, HTTPS URLs for any port, egress allowlists or no-internet mode, async jobs and batch runs.
 
 ## Open-Source & Self-Hosted Runtimes
 
