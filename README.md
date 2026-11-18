@@ -74,6 +74,7 @@ The building blocks underneath most managed sandboxes — run your own.
 | [SmolVM](https://celesto.ai) | Celesto AI | QEMU or Firecracker | OSS | Ubuntu/Windows guests, snapshots, Python SDK + CLI |
 | [Minimal](https://minimal.dev) | minimal | libkrun microVM (macOS); user namespaces (Linux) | Apache-2.0 | CLI for sandboxed dev envs + coding agents; MCP server, GitHub Action |
 | [E2B runtime](https://github.com/e2b-dev/E2B) | E2B | Firecracker microVMs | Apache-2.0 | Self-host the E2B stack; BYOC/on-prem supported |
+| [CubePod](https://cubepod.dev) | CubePlex | Kata Containers microVMs | Apache-2.0 | Persistent writable RootFS + `/workspace` raw block volumes, CoW forks, zero-trust egress secret vault, E2B SDK drop-in ([cubeplexai/cubepod](https://github.com/cubeplexai/cubepod)) |
 | [Beam runtime](https://github.com/beam-cloud) | Beam Cloud | gVisor or runc | AGPL-3.0 | OSS GPU sandbox runtime (managed cloud at beam.cloud) |
 | [OpenHands runtime](https://github.com/All-Hands-AI/OpenHands) | All-Hands AI | Docker containers (default) | MIT | Reference OSS coding-agent execution runtime ([openhands.dev](https://openhands.dev)); Daytona partnership for elastic sandboxes |
 | [AgentBox](https://github.com/topics/agent-sandbox) | community | Docker+FUSE overlay (local), microVM (cloud) | MIT | Agent sandbox from the 2026 provider comparisons |
